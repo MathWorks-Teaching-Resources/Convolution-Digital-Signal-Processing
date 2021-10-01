@@ -50,8 +50,12 @@ The instructions inside the live scripts will guide you through the activities a
 ## License ##
 The license for this module is available in the LICENSE.TXT file in this GitHub repository.
 
-## Support ##
-Have any questions or feedback? Contact the [MathWorks online teaching team](mailto:onlineteaching@mathworks.com).
+## Educator Resources ##
+* [Featured Courseware](https://www.mathworks.com/academia/courseware/course-materials.html)
+* [Teach with MATLAB and Simulink](https://www.mathworks.com/academia/educators.html)
+* [MATLAB Grader](https://www.mathworks.com/products/matlab-grader.html)
+
+Have any questions or feedback? Contact the <a href="mailto:onlineteaching@mathworks.com">MathWorks online teaching team.</a>
 
 ## ##
 
