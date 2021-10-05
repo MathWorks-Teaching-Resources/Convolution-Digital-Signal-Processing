@@ -6,7 +6,7 @@ _Created with R2021a. Compatible with R2021a and later releases._
 ## Description ##
 This package contains _[live scripts](https://www.mathworks.com/products/matlab/live-editor.html)_ and supporting data files centered around the fundamentals of convolution in digital signal processing. These materials are designed to be flexible and can be easily modified to accommodate a variety of teaching and learning methods. Used in a sequence, the live scripts progressively add depth to the topic. However, each script can be easily adapted for standalone use. We include a brief background, interactive illustrations, tasks, reflection questions, application examples, and guided exercises for the different concepts explored.  
 
-<img src = "https://user-images.githubusercontent.com/81376570/135640078-3633376a-1340-48f7-8b2c-45e354976123.gif" height = "350">
+<img src = "https://user-images.githubusercontent.com/81376570/135640078-3633376a-1340-48f7-8b2c-45e354976123.gif" height = "350" width = "1600">
 
 The instructions inside the live scripts will guide you through the activities and exercises. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the **Stop** button in the **Run** section of the **Live Editor** tab in the MATLAB toolstrip.  
 
