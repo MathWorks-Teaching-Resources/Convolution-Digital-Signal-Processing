@@ -1,4 +1,4 @@
-# Convolution in Digital Signal Processing [![View Convolution in Digital Signal Processing on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/97112-convolution-in-digital-signal-processing)  
+# Convolution in Digital Signal Processing [![View Convolution in Digital Signal Processing on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/97112-convolution-in-digital-signal-processing) or [Open in MATLAB Online](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Convolution-Digital-Signal-Processing&project=Convolution.prj)
 **Curriculum Module**  
 _Created with R2021a. Compatible with R2021a and later releases._
 
@@ -6,7 +6,7 @@ _Created with R2021a. Compatible with R2021a and later releases._
 ## Description ##
 This package contains _[live scripts](https://www.mathworks.com/products/matlab/live-editor.html)_ and supporting data files centered around the fundamentals of convolution in digital signal processing. These materials are designed to be flexible and can be easily modified to accommodate a variety of teaching and learning methods. Used in a sequence, the live scripts progressively add depth to the topic. However, each script can be easily adapted for standalone use. We include a brief background, interactive illustrations, tasks, reflection questions, application examples, and guided exercises for the different concepts explored.  
 
-<img src = "https://user-images.githubusercontent.com/81376570/135640078-3633376a-1340-48f7-8b2c-45e354976123.gif" height = "350" width = "1600">
+<img src = "https://user-images.githubusercontent.com/81376570/135640078-3633376a-1340-48f7-8b2c-45e354976123.gif" height = "350">
 
 The instructions inside the live scripts will guide you through the activities and exercises. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the **Stop** button in the **Run** section of the **Live Editor** tab in the MATLAB toolstrip.  
 
@@ -15,7 +15,7 @@ The instructions inside the live scripts will guide you through the activities a
 
 ## Details ##
 
-**`ConvolutionBasics.mlx`**   
+**`ConvolutionBasics.mlx`** [Open in MATLAB Online](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Convolution-Digital-Signal-Processing&project=Convolution.prj&file=convolutionBasics.mlx)   
 **Learning Goals**
 - Define and compute convolution of two 1-D signals.
 - Use FFT to compute convolution.
@@ -25,7 +25,7 @@ The instructions inside the live scripts will guide you through the activities a
 **Products:** MATLAB, Signal Processing Toolbox™ 
 
 ## ##
-**`ConvolutionLTI.mlx`**  
+**`ConvolutionLTI.mlx`** [Open in MATLAB Online](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Convolution-Digital-Signal-Processing&project=Convolution.prj&file=convolutionLTI.mlx)  
 **Learning Goals**  
 - Identify the moving average operation as a simple LTI system.  
 - Define an LTI system. 
@@ -37,7 +37,7 @@ The instructions inside the live scripts will guide you through the activities a
 
 ## ##
 
-**`ConvolutionFilters.mlx`**   
+**`ConvolutionFilters.mlx`** [Open in MATLAB Online](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Convolution-Digital-Signal-Processing&project=Convolution.prj&file=convolutionFilters.mlx)   
 **Learning Goals**  
 - Explain the frequency domain implications of convolving two signals in the time domain.
 - Achieve equivalence between low pass filtering and convolution.  
