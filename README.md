@@ -14,7 +14,7 @@ This package contains _[live scripts](https://www.mathworks.com/products/matlab/
 The instructions inside the live scripts will guide you through the activities and exercises. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the **Stop** button in the **Run** section of the **Live Editor** tab in the MATLAB toolstrip.  
 
 ## Suggested Prework ## 
-[MATLAB Onramp](https://www.mathworks.com/learn/tutorials/matlab-onramp.html) – a free two-hour introductory tutorial to learn the essentials of MATLAB®. 
+[MATLAB Onramp](https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted) – a free two-hour introductory tutorial to learn the essentials of MATLAB®. 
 
 ## Details ##
 
