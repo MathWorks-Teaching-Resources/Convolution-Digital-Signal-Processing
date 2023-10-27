@@ -54,17 +54,17 @@ MATLAB® and the Signal Processing Toolbox™ are used throughout. To run all of
 ## [**ConvolutionBasics.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Convolution-Digital-Signal-Processing&project=Convolution.prj&file=ConvolutionBasics.mlx) 
 |  | **In this script, students will...**  |
 | :-- | :-- |
-| <img src="Images/Conv1D.gif" width="171" alt="Conv1D.gif"> |<br>-  define and compute convolution of two 1-D signals <br>-  use FFT to compute convolution <br>-  define and compute circular convolution <br>-  achieve equivalence between circular and linear convolution  |
+| <img src="Images/Conv1D.gif" width="171" alt="Conv1D.gif"> |-  define and compute convolution of two 1-D signals <br>-  use FFT to compute convolution <br>-  define and compute circular convolution <br>-  achieve equivalence between circular and linear convolution  |
 
 ## [**ConvolutionLTI.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Convolution-Digital-Signal-Processing&project=Convolution.prj&file=ConvolutionLTI.mlx) 
 |  | **In this script, students will...** | **Application**  |
 | :-- | :-- | :-- |
-| <img src="Images/LTIPlot.png" width="171" alt="LTIPlot.png"> |<br>-  define a linear time invariant (LTI) system <br>-  identify the moving average operation as a simple LTI system <br>-  compute the output of an LTI system for an arbitrary input signal given its impulse response |<br>-  Transform a monophone signal to two channel stereo with reverberation  |
+| <img src="Images/LTIPlot.png" width="171" alt="LTIPlot.png"> |-  define a linear time invariant (LTI) system <br>-  identify the moving average operation as a simple LTI system <br>-  compute the output of an LTI system for an arbitrary input signal given its impulse response |-  Transform a monophone signal to two channel stereo with reverberation  |
 
 ## [**ConvolutionFilters.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Convolution-Digital-Signal-Processing&project=Convolution.prj&file=ConvolutionFilters.mlx) 
 |  | **In this script, students will...** | **Applications**  |
 | :-- | :-- | :-- |
-| <img src="Images/EmbossedRose.png" width="171" alt="EmbossedRose.png"> |<br>-  explain the frequency domain implications of convolving two signals in the time domain <br>-  achieve equivalence between low pass filtering and convolution <br>-  define and compute convolution of two 2-D signals <br>-  perform spatial filtering of images to achieve effects such as blurring and embossing |<br>-  Blurring images <br>-  Sharpening images <br>-  Using convolution to identify parts of an image <br>-  Using pretrained convolutional neural network to identify images  |
+| <img src="Images/EmbossedRose.png" width="171" alt="EmbossedRose.png"> |-  explain the frequency domain implications of convolving two signals in the time domain <br>-  achieve equivalence between low pass filtering and convolution <br>-  define and compute convolution of two 2-D signals <br>-  perform spatial filtering of images to achieve effects such as blurring and embossing |-  Blurring images <br>-  Sharpening images <br>-  Using convolution to identify parts of an image <br>-  Using pretrained convolutional neural network to identify images  |
 
 ## [**PracticeProblemSolns.mlx**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Convolution-Digital-Signal-Processing&project=Convolution.prj&file=PracticeProblemSolns.mlx) 
 # Related Courseware Modules
