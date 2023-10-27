@@ -39,7 +39,7 @@ Use the [<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https:/
 
 ### **On Desktop:**
 
-Download or clone this repository. Open MATLAB, navigate to the folder containing these scripts and double-click on [Convolution.prj](matlab: openProject("Convolution.prj")). It will add the appropriate files to your MATLAB path and open an app that asks you where you would like to start. 
+Download or clone this repository. Open MATLAB, navigate to the folder containing these scripts and double-click on [Convolution.prj](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Convolution-Digital-Signal-Processing&project=Convolution.prj). It will add the appropriate files to your MATLAB path and open an app that asks you where you would like to start. 
 
 
 Ensure you have all the required products ([listed below](#H_E850B4FF)) installed. If you need to include a product, add it using the Add-On Explorer. To install an add-on, go to the **Home** tab and select  <img src="Images/AddOnsIcon.png" width="16" alt="AddOnsIcon.png"> **Add-Ons** > **Get Add-Ons**. 
@@ -70,7 +70,7 @@ MATLAB® and the Signal Processing Toolbox™ are used throughout. To run all of
 # Related Courseware Modules
 | **Courseware Module** | **Sample Content** | **Available on:**  |
 | :-- | :-- | :-- |
-| [**Binary Morphology in Image Processing**](https://www.mathworks.com/matlabcentral/fileexchange/94590-binary-morphology-in-image-processing) | <img src="Images/DilationAnimation.gif" width="171" alt="DilationAnimation.gif"> | [<img src="Images/OpenInFX.png" width="91" alt="OpenInFX.png">](https://www.mathworks.com/matlabcentral/fileexchange/94590-binary-morphology-in-image-processing)[<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Morphology-in-Image-Processing&project=Morphology.prj)[GitHub](https://github.com/MathWorks-Teaching-Resources/Morphology-in-Image-Processing)  |
+| [**Binary Morphology in Image Processing**](https://www.mathworks.com/matlabcentral/fileexchange/94590-binary-morphology-in-image-processing) | <img src="Images/DilationAnimation.gif" width="171" alt="DilationAnimation.gif"> | [<img src="Images/OpenInFX.png" width="91" alt="OpenInFX.png">](https://www.mathworks.com/matlabcentral/fileexchange/94590-binary-morphology-in-image-processing)<br>[<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Morphology-in-Image-Processing&project=Morphology.prj)<br>[GitHub](https://github.com/MathWorks-Teaching-Resources/Morphology-in-Image-Processing)  |
 | <br>[**Climate Data Visualization and Analysis**](https://www.mathworks.com/matlabcentral/fileexchange/110125-climate-data-visualization-and-analysis) | <img src="Images/image_9.png" width="171" alt="image_9.png"> | <br>[<img src="Images/OpenInFX.png" width="91" alt="OpenInFX.png">](https://www.mathworks.com/matlabcentral/fileexchange/110125-climate-data-visualization-and-analysis)<br>[<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Climate-Data-Visualization-and-Analysis&project=ClimateVis.prj)<br>[GitHub](https://github.com/MathWorks-Teaching-Resources/Climate-Data-Visualization-and-Analysis)  |
 
 
@@ -86,4 +86,5 @@ Looking for more? Find an issue? Have a suggestion? Please contact the [MathWork
 
  *©* Copyright 2023 The MathWorks™, Inc
 
-
+
+
