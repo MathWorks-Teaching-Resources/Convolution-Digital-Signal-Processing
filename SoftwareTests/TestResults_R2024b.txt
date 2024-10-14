@@ -1,0 +1,5 @@
+Name,Passed,Failed,Incomplete,Duration,Details
+SmokeTests[Project=Convolution]/SmokeRun(File=ConvolutionBasics.mlx),1,0,0,32.6587833,
+SmokeTests[Project=Convolution]/SmokeRun(File=ConvolutionFilters.mlx),1,0,0,15.8280241,
+SmokeTests[Project=Convolution]/SmokeRun(File=ConvolutionLTI.mlx),1,0,0,19.5143519,
+SmokeTests[Project=Convolution]/SmokeRun(File=PracticeProblemSolns.mlx),1,0,0,14.3835171,

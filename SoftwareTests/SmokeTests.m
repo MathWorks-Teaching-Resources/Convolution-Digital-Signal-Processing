@@ -1,7 +1,11 @@
 classdef SmokeTests < matlab.unittest.TestCase
+
+    properties
+        RootFolder
+    end
     
     properties (ClassSetupParameter)
-        Project = {char(currentProject().Name)};
+        Project = {currentProject()};
     end
 
     properties (TestParameter)
@@ -11,7 +15,7 @@ classdef SmokeTests < matlab.unittest.TestCase
     methods (TestParameterDefinition,Static)
 
         function File = RetrieveFile(Project) %#ok<INUSD>
-            % Retrieve the files to test
+            % Retrieve student template files:
             RootFolder = currentProject().RootFolder;
             File = dir(fullfile(RootFolder,"Scripts","*.mlx"));
             File = {File.name}; 
@@ -22,13 +26,15 @@ classdef SmokeTests < matlab.unittest.TestCase
     methods (TestClassSetup)
 
         function SetUpSmokeTest(testCase,Project) %#ok<INUSD>
-            try
-               currentProject;
-               % Close the StartUp app if still open
-               delete(findall(groot,'Name','StartUp App'))
-            catch ME
-                warning("Project is not loaded.")
-            end
+            % Navigate to project root folder:
+            testCase.RootFolder = Project.RootFolder;
+            cd(testCase.RootFolder)
+            
+            % Close the StartUp app if still open:
+            delete(findall(groot,'Name','StartUp App'))
+
+            % Log MATLAB version:
+            testCase.log("Running in " + version)
         end
 
     end
@@ -37,30 +43,27 @@ classdef SmokeTests < matlab.unittest.TestCase
 
         function SmokeRun(testCase,File)
 
-            % Check file system
-            RootFolder = currentProject().RootFolder;
-            cd(RootFolder)
-            Filename = string(File);
+            % Navigate to project root folder:
+            cd(testCase.RootFolder)
+            FileToRun = string(File);
 
             % Pre-test:
-            PreFiles = CheckPreFile(testCase,Filename);
+            PreFiles = CheckPreFile(testCase,FileToRun);
             run(PreFiles);
 
             % Run SmokeTest
-            disp(">> Running " + Filename);
+            disp(">> Running " + FileToRun);
             try
-                run(fullfile("Scripts",Filename));
-            catch ME %#ok<*UNRCH>
-                if ~any(strcmp(ME.identifier,KnownIssuesID))
-                    rethrow(ME)
-                end
+                run(fullfile("Scripts",FileToRun));
+            catch ME 
+                
             end
 
             % Post-test:
-            PostFiles = CheckPostFile(testCase,Filename);
+            PostFiles = CheckPostFile(testCase,FileToRun);
             run(PostFiles)
 
-            % Log every figure created during run
+            % Log every figure created during run:
             Figures = findall(groot,'Type','figure');
             Figures = flipud(Figures);
             if ~isempty(Figures)
@@ -78,6 +81,13 @@ classdef SmokeTests < matlab.unittest.TestCase
                 bdclose all
             end
 
+            % Rethrow error if any
+            if exist("ME","var")
+                if ~any(strcmp(ME.identifier,KnownIssuesID))
+                    rethrow(ME)
+                end
+            end
+
         end
             
     end
@@ -85,11 +95,11 @@ classdef SmokeTests < matlab.unittest.TestCase
 
     methods (Access = private)
 
-        function y = CheckPreFile(testCase,Filename)
+       function Path = CheckPreFile(testCase,Filename)
             PreFile = "Pre"+replace(Filename,".mlx",".m");
-            PreFilePath = fullfile(currentProject().RootFolder,"SoftwareTests","PreFiles",PreFile);
-            if ~isfolder(fullfile(currentProject().RootFolder,"SoftwareTests/PreFiles"))
-                mkdir(fullfile(currentProject().RootFolder,"SoftwareTests/PreFiles"))
+            PreFilePath = fullfile(testCase.RootFolder,"SoftwareTests","PreFiles",PreFile);
+            if ~isfolder(fullfile(testCase.RootFolder,"SoftwareTests/PreFiles"))
+                mkdir(fullfile(testCase.RootFolder,"SoftwareTests/PreFiles"))
             end
             if ~isfile(PreFilePath)
                 writelines("%  Pre-run script for "+Filename,PreFilePath)
@@ -98,21 +108,21 @@ classdef SmokeTests < matlab.unittest.TestCase
                 writelines("% ---- Pre-run commands -----",PreFilePath,'WriteMode','append');
                 writelines(" ",PreFilePath,'WriteMode','append');
             end
-            y = PreFilePath;
+            Path = PreFilePath;
         end
 
-        function y = CheckPostFile(testCase,Filename)
+        function Path = CheckPostFile(testCase,Filename)
             PostFile = "Post"+replace(Filename,".mlx",".m");
-            PostFilePath = fullfile(currentProject().RootFolder,"SoftwareTests","PostFiles",PostFile);
-            if ~isfolder(fullfile(currentProject().RootFolder,"SoftwareTests/PostFiles"))
-                mkdir(fullfile(currentProject().RootFolder,"SoftwareTests/PostFiles"))
+            PostFilePath = fullfile(testCase.RootFolder,"SoftwareTests","PostFiles",PostFile);
+            if ~isfolder(fullfile(testCase.RootFolder,"SoftwareTests/PostFiles"))
+                mkdir(fullfile(testCase.RootFolder,"SoftwareTests/PostFiles"))
             end
             if ~isfile(PostFilePath)
                 writelines("%  Post-run script for "+Filename,PostFilePath)
                 writelines("% ---- Post-run commands -----",PostFilePath,'WriteMode','append');
                 writelines(" ",PostFilePath,'WriteMode','append');
             end
-            y = PostFilePath;
+            Path = PostFilePath;
         end
 
     end
