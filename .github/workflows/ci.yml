@@ -80,7 +80,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MATLAB_PRODUCTS: System_Identification_Toolbox
-       Signal_Processing_Toolbox
+      Signal_Processing_Toolbox
       Deep_Learning_Toolbox
       Image_Processing_Toolbox
       HDL_Verifier
