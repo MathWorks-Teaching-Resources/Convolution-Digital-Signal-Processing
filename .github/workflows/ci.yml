@@ -79,14 +79,15 @@ jobs:
         Releases: [R2025b, R2026a]
     runs-on: ubuntu-latest
     env:
-      MATLAB_PRODUCTS: System_Identification_Toolbox
-      Signal_Processing_Toolbox
-      Deep_Learning_Toolbox
-      Image_Processing_Toolbox
-      HDL_Verifier
-      Simulink
-      Simulink_Real-Time
-      Stateflow
+      MATLAB_PRODUCTS: >
+       System_Identification_Toolbox
+       Signal_Processing_Toolbox
+       Deep_Learning_Toolbox
+       Image_Processing_Toolbox
+       HDL_Verifier
+       Simulink
+       Simulink_Real-Time
+       Stateflow
 
       LD_PRELOAD: /usr/lib/x86_64-linux-gnu/libstdc++.so.6
     steps:
