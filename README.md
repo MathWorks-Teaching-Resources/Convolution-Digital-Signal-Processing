@@ -4,7 +4,8 @@
 
 [![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/97112-convolution-in-digital-signal-processing) or [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Convolution-Digital-Signal-Processing&project=Convolution.prj&file=README.mlx)
 
-[![MATLAB Versions Tested](https://img.shields.io/endpoint?url=https://mathworks-teaching-resources.github.io/Convolution-in-Digital-Processing/TestedWith.json)](https://MathWorks-Teaching-Resources.github.io/Convolution-in-Digital-Processing)
+[![MATLAB Versions Tested](https://img.shields.io/endpoint?url=https://mathworks-teaching-resources.github.io/Convolution-Digital-Signal-Processing/TestedWith.json)](https://mathWorks-teaching-resources.github.io/Convolution-Digital-Signal-Processing)
+
 
 **Curriculum Module**
 
